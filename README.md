@@ -10,7 +10,8 @@ data-pipeline defect; deliver the smallest verified correction; add a
 regression test; and provide a concise handoff. Scope and payment terms are
 agreed in writing before work begins.
 
-[Request a scoped estimate by email](mailto:tzh476@gmail.com?subject=Scoped%20engineering%20milestone&body=Repository%20or%20system%3A%0ADesired%20outcome%3A%0AReproduction%20or%20fixtures%3A%0ADeadline%3A%0ABudget%20range%3A%0A)
+[Open a structured milestone request](https://github.com/tzh476/tzh476/issues/new?template=fixed-milestone.yml)
+or [request a scoped estimate by email](mailto:tzh476@gmail.com?subject=Scoped%20engineering%20milestone&body=Repository%20or%20system%3A%0ADesired%20outcome%3A%0AReproduction%20or%20fixtures%3A%0ADeadline%3A%0ABudget%20range%3A%0A).
 
 ## Good first milestones
 
@@ -41,7 +42,7 @@ required for the initial diagnosis.
 Public repositories below show work across Python, TypeScript, Go, C/C++, data
 systems, automation, model tooling, and infrastructure.
 
-For a scoped inquiry, use the email link above or contact
+For a scoped inquiry, use the structured request or email link above, or contact
 [tzh476@gmail.com](mailto:tzh476@gmail.com). Include the repository or system,
 desired outcome, available fixtures, deadline, and budget range. Do not send
 passwords, tokens, private keys, or regulated personal data.

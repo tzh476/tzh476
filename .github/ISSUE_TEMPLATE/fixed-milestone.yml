@@ -1,0 +1,68 @@
+name: Fixed engineering milestone
+description: Request a scoped estimate for one bounded engineering outcome.
+title: "Milestone: "
+labels:
+  - inquiry
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share only information that can be public. Do not include credentials, private source code, customer data, or regulated personal data.
+  - type: input
+    id: repository
+    attributes:
+      label: Public repository or system
+      description: Link a public repository, public demo, or describe the stack without secrets.
+      placeholder: https://github.com/example/project
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe one observable result, not a broad product roadmap.
+      placeholder: Reproduce and fix the failing webhook retry, with a regression test.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Reproduction evidence or fixtures
+      description: Provide public error text, sanitized fixtures, or exact reproduction steps.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List the checks that prove the milestone is complete.
+      placeholder: Tests pass; staging endpoint returns 200; retry is demonstrated with the sanitized fixture.
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Desired deadline
+      placeholder: 2026-08-20 UTC
+    validations:
+      required: true
+  - type: dropdown
+    id: budget
+    attributes:
+      label: Fixed budget range
+      options:
+        - USD 300-499
+        - USD 500-699
+        - USD 700-900
+        - Above USD 900
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Public intake boundaries
+      options:
+        - label: I have not included passwords, tokens, private keys, private source code, customer data, or regulated personal data.
+          required: true
+        - label: I understand scope, payment, intellectual-property, and access terms must be agreed in writing before work starts.
+          required: true
