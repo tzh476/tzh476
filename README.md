@@ -2,6 +2,8 @@
 
 Independent engineer available for small, bounded remote projects.
 
+[Engineering evidence / project resume](ENGINEERING-EVIDENCE.md)
+
 ## Good first milestones
 
 | Scope | Typical fixed range |
