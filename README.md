@@ -4,6 +4,11 @@ Independent engineer available for small, bounded remote projects.
 
 [Engineering evidence / project resume](ENGINEERING-EVIDENCE.md)
 
+## Technical writing samples
+
+- [A green CI run is an input, not a conclusion](writing-samples/green-ci-is-not-a-verdict.md)
+- [How to build a dashboard that can say "I don't know"](writing-samples/dashboards-that-can-say-i-dont-know.md)
+
 **Available for one new bounded milestone.** The fastest starting point is a
 USD 300 diagnosis-and-fix milestone: reproduce one backend, API, automation, or
 data-pipeline defect; deliver the smallest verified correction; add a
