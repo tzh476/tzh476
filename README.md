@@ -9,6 +9,10 @@ Independent engineer available for small, bounded remote projects.
 - [A green CI run is an input, not a conclusion](writing-samples/green-ci-is-not-a-verdict.md)
 - [How to build a dashboard that can say "I don't know"](writing-samples/dashboards-that-can-say-i-dont-know.md)
 
+## Digital product
+
+[Cash-First Opportunity Scorecard](https://tzh476.github.io/cash-first-scorecard/) — USD 29 via PayPal. A 15-minute scorecard for deciding whether a bounty, paid writing call, or fixed-price gig is actually worth starting. Advertised prizes are not income.
+
 **Available for one new bounded milestone.** The fastest starting point is a
 USD 300 diagnosis-and-fix milestone: reproduce one backend, API, automation, or
 data-pipeline defect; deliver the smallest verified correction; add a
