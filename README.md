@@ -4,6 +4,18 @@ Independent engineer available for small, bounded remote projects.
 
 [Engineering evidence / project resume](ENGINEERING-EVIDENCE.md)
 
+## Recent upstream work
+
+- **[qBraid/qBraid#1358](https://github.com/qBraid/qBraid/pull/1358)** — pyQuil gate
+  parameters were reaching Cirq as `pyquil.quilatom` objects instead of sympy
+  expressions, so `cirq.is_parameterized` returned `False` on a circuit that *did* have a
+  free parameter, and both `str(circuit)` and `unitary()` raised. Traced from the symptom
+  to the two lines responsible, fixed at the conversion layer, and covered with six tests
+  — five of which fail without the change. This is the upstream cause of
+  [unitaryfoundation/mitiq#2687](https://github.com/unitaryfoundation/mitiq/issues/2687),
+  open since March 2025, where an earlier attempt to patch Cirq's diagram formatter was
+  declined; the analysis explains why that was the right call. (Open, awaiting review.)
+
 ## Technical writing samples
 
 - [The Go parser bug that reserves memory for input it is about to reject](https://github.com/tzh476/go-prealloc-before-validate)
@@ -16,14 +28,14 @@ Independent engineer available for small, bounded remote projects.
 
 ## Digital products
 
-[allocguard](https://payhip.com/b/27A9r) — USD 19 via PayPal. A Go checker for the
+[allocguard](https://payhip.com/b/27A9r) — USD 19, card or PayPal, instant download. A Go checker for the
 defect class in the writeup above: capacity reserved from untrusted input before that
 input is validated. Reports a site only when the count comes from outside the
 function and the fill loop can return early, so it stays silent on six of ten large
 Go repositories scanned. Ships with source (MIT), stdlib only, exits 1 on findings.
 Its low-precision recursion check is off by default, and the README says why.
 
-[Cash-First Opportunity Scorecard](https://tzh476.github.io/cash-first-scorecard/) — USD 29 via PayPal. A 15-minute scorecard for deciding whether a bounty, paid writing call, or fixed-price gig is actually worth starting. Advertised prizes are not income.
+[Cash-First Opportunity Scorecard](https://payhip.com/b/xElkF) — USD 29, card or PayPal, instant download. A 15-minute scorecard for deciding whether a bounty, paid writing call, or fixed-price gig is actually worth starting. Advertised prizes are not income.
 
 **Available for one new bounded milestone.** The fastest starting point is a
 USD 300 diagnosis-and-fix milestone: reproduce one backend, API, automation, or
