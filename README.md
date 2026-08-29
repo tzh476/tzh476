@@ -6,10 +6,22 @@ Independent engineer available for small, bounded remote projects.
 
 ## Technical writing samples
 
+- [The Go parser bug that reserves memory for input it is about to reject](https://github.com/tzh476/go-prealloc-before-validate)
+  — a defect class with a runnable demo, and why the obvious one-line fix is
+  measurably a regression (a constant cap improved hostile input 6,463x while making
+  a valid 1000-element list 2.36x worse; a proportional bound gives 7x with zero
+  regression). Includes benchmarks against `buger/jsonparser` and `miekg/dns`.
 - [A green CI run is an input, not a conclusion](writing-samples/green-ci-is-not-a-verdict.md)
 - [How to build a dashboard that can say "I don't know"](writing-samples/dashboards-that-can-say-i-dont-know.md)
 
-## Digital product
+## Digital products
+
+[allocguard](https://payhip.com/b/27A9r) — USD 19 via PayPal. A Go checker for the
+defect class in the writeup above: capacity reserved from untrusted input before that
+input is validated. Reports a site only when the count comes from outside the
+function and the fill loop can return early, so it stays silent on six of ten large
+Go repositories scanned. Ships with source (MIT), stdlib only, exits 1 on findings.
+Its low-precision recursion check is off by default, and the README says why.
 
 [Cash-First Opportunity Scorecard](https://tzh476.github.io/cash-first-scorecard/) — USD 29 via PayPal. A 15-minute scorecard for deciding whether a bounty, paid writing call, or fixed-price gig is actually worth starting. Advertised prizes are not income.
 
