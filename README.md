@@ -26,14 +26,28 @@ Independent engineer available for small, bounded remote projects.
 - [A green CI run is an input, not a conclusion](writing-samples/green-ci-is-not-a-verdict.md)
 - [How to build a dashboard that can say "I don't know"](writing-samples/dashboards-that-can-say-i-dont-know.md)
 
+## Open source tools
+
+- **[allocguard](https://github.com/tzh476/allocguard)** — a Go checker for the defect
+  class in the writeup above: capacity reserved from untrusted input before that input
+  is validated. Reports a site only when the count comes from outside the function and
+  the fill loop can return early, so it stays silent on six of ten large Go repositories
+  scanned. Verified against `miekg/dns` (2 findings) and silent on `quic-go`,
+  `hashicorp/hcl` and `pelletier/go-toml`. Syntactic only — it cannot see who produces
+  the counted value, and its low-precision recursion check is off by default. MIT,
+  stdlib only, exits 1 on findings.
+  [`pkg.go.dev`](https://pkg.go.dev/github.com/tzh476/allocguard)
+
+  ```
+  go install github.com/tzh476/allocguard@latest
+  ```
+
 ## Digital products
 
-[allocguard](https://payhip.com/b/27A9r) — USD 19, card or PayPal, instant download. A Go checker for the
-defect class in the writeup above: capacity reserved from untrusted input before that
-input is validated. Reports a site only when the count comes from outside the
-function and the fill loop can return early, so it stays silent on six of ten large
-Go repositories scanned. Ships with source (MIT), stdlib only, exits 1 on findings.
-Its low-precision recursion check is off by default, and the README says why.
+[allocguard, packaged](https://payhip.com/b/27A9r) — USD 19, card or PayPal, instant
+download. The same MIT-licensed tool as above, as a versioned archive with install
+notes and the benchmark fixtures. The source is free; this is for buying the packaging
+and supporting the work.
 
 [Cash-First Opportunity Scorecard](https://payhip.com/b/xElkF) — USD 29, card or PayPal, instant download. A 15-minute scorecard for deciding whether a bounty, paid writing call, or fixed-price gig is actually worth starting. Advertised prizes are not income.
 
