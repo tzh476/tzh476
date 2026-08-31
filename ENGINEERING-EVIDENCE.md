@@ -29,6 +29,7 @@ history or years of experience are inferred from GitHub activity.
 - Added regression coverage for invalid zoom, center, heading, tilt, and
   bounds values.
 - Merged upstream with test and website-build checks passing.
+- 3 files, +173/−20 — 160 of those lines are tests and 13 are the fix.
 
 ### QuantumBrush — Java
 
@@ -40,22 +41,15 @@ history or years of experience are inferred from GitHub activity.
   asynchronously.
 - Merged upstream after compiling the application against Processing 4.4.1.
 
-### BloggerEasy — Python CLI
-
-[Add an offline magazine-template shortcut](https://github.com/mergeos-bounties/BloggerEasy/pull/118)
-
-- Added a backward-compatible CLI path, documentation, and automated coverage.
-- Merged upstream with the Python 3.11 and 3.12 CI jobs passing.
-
 ## Original projects
 
-- [`zvm`](https://github.com/tzh476/zvm) — a Java implementation project with
-  240+ GitHub stars.
-- [`wasm.go`](https://github.com/tzh476/wasm.go) and
-  [`jvm.go`](https://github.com/tzh476/jvm.go) — Go projects exploring virtual
-  machine and bytecode execution.
+- [`zvm`](https://github.com/tzh476/zvm) — a JVM implementation written in
+  Java; 249 stars, 55 forks.
 - [`innodb-viewer`](https://github.com/tzh476/innodb-viewer) — Java tooling for
   inspecting InnoDB data structures.
+- [`allocguard`](https://github.com/tzh476/allocguard) — a Go static checker for
+  capacity reserved from untrusted input before that input is validated. Stdlib
+  only, MIT, published on `pkg.go.dev`.
 
 ## Capabilities
 
