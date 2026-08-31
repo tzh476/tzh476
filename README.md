@@ -6,6 +6,15 @@ Independent engineer available for small, bounded remote projects.
 
 ## Recent upstream work
 
+- **[visgl/react-google-maps#1023](https://github.com/visgl/react-google-maps/pull/1023)** —
+  *merged 2026-07-20 by the maintainer.* The Google Maps JS API can hand back an invalid
+  camera during a pinch-zoom; the library converted that into fallback state such as
+  `zoom: 0` and emitted a synthetic camera-change event, so a valid map could be knocked to
+  a garbage viewport by a transient upstream reading. The fix drops the invalid snapshot
+  instead of laundering it into state, and keeps the developer warning visible.
+  **3 files, +173/−20 — of which 160 lines are tests and 13 are the fix.** That ratio is
+  deliberate: the correction is small because the diagnosis was specific.
+
 - **[qBraid/qBraid#1358](https://github.com/qBraid/qBraid/pull/1358)** — pyQuil gate
   parameters were reaching Cirq as `pyquil.quilatom` objects instead of sympy
   expressions, so `cirq.is_parameterized` returned `False` on a circuit that *did* have a
