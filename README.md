@@ -33,6 +33,16 @@ Free and MIT: <https://github.com/tzh476/allocguard>. There is also a paid packa
 copy at <https://payhip.com/b/27A9r> (USD 19) if you would rather have a pinned
 archive with install notes than track the repo — the tool itself is the same code.
 
+## Work
+
+I take bounded, fixed-price pieces of exactly the kind of work above: reproduce a
+defect against a failing test, deliver the smallest fix that makes it pass, and add the
+regression test that would have caught it. Scope, price and acceptance criteria agreed
+in writing before any work starts, and I will tell you when I think a problem is not
+worth the fix.
+
+Reach me at <tzh476@gmail.com>.
+
 ## Recent upstream contributions
 
 - [microsoft/qdk#3291](https://github.com/microsoft/qdk/pull/3291) — a public Python import API for `.qsc` circuits, backed by native Rust conversion.
